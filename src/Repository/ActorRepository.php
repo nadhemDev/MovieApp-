@@ -29,7 +29,7 @@ class ActorRepository extends ServiceEntityRepository
             $this->getEntityManager()->flush();
         }
     }
-
+    
     public function remove(Actor $entity, bool $flush = false): void
     {
         $this->getEntityManager()->remove($entity);
